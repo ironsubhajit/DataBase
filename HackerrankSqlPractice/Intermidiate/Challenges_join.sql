@@ -1,3 +1,5 @@
+-- Link: https://www.hackerrank.com/challenges/challenges/problem?isFullScreen=true
+
 select h.hacker_id, h.name, count(*) as total_cnt
 from hackers as h inner join challenges as ch on h.hacker_id = ch.hacker_id
 group by ch.hacker_id, h.name
